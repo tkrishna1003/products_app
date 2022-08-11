@@ -1,0 +1,14 @@
+<div class = "d-flex justify-content-center h-100">
+    <div class = "col-md-8 col-12 d-flex flex-column h-100" >
+        <div class = "itemsContainer d-flex justify-content-center flex-wrap" >
+             <div class = "col-md-3 col-sm-12 card m-2" *ngFor = "let eachProduct of paginatedProductList">
+    
+                {{eachProduct.blend_name}}
+            </div>
+
+        </div>
+        <div class = "paginationContainer mt-auto d-flex justify-content-center">
+            <pagination [boundaryLinks] = "true" [directionLinks] = "true" [totalItems] = "sampleData.length" [itemsPerPage] = "10" (pageChanged) = "pageChanged($event)"></pagination>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+.itemsContainer {
+    height: calc(100vh - 200px);
+    overflow: scroll;
+}
+
+:host {
+    ::ng-deep {
+
+        .page-link {
+            color: #b3b3b3 !important;
+        }
+
+        .active>.page-link {
+            z-index: 3;
+            color: white;
+            background-color: #b3b3b3 !important;
+            border-color: #b3b3b3 !important;
+        }
+    }
+
+}
