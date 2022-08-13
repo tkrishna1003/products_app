@@ -1,4 +1,19 @@
-# ProductsApp
+<a href = "https://loquacious-kitten-ba6cec.netlify.app/">Products app demo</a>
+
+### Description
+The project has following properties
+```sh
+- Data on the app is managed using NgRx Store
+- HTTP requests are dispatched via NgRx Effects
+- Responsive design
+- Uses NgRx Selectors for retrieving data from store
+- OnPush change detection implemented on all components
+```
+ 
+### Contains product list page
+### Contains a page for the details
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
