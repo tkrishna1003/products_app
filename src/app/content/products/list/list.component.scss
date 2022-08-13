@@ -3,19 +3,63 @@
     overflow: scroll;
 }
 
+
+
+.card-body .blendName {
+    font-family: cursive;
+}
+
+.card-body {
+    height: 175px;
+    background-image: url('../../../../assets/images/kisspng-coffee-bean-scattered-coffee-beans-5a70340c724b02.8291812015173027964682.jpg');
+}
+
+.card-footer {
+    height: 60px !important;
+    overflow: scroll;
+}
+
 :host {
     ::ng-deep {
 
+
+
         .page-link {
-            color: #b3b3b3 !important;
+            color: #6a3729 !important;
+
+
+        }
+
+        .page-link:hover {
+            background-color: #c39776 !important;
+
         }
 
         .active>.page-link {
             z-index: 3;
-            color: white;
-            background-color: #b3b3b3 !important;
-            border-color: #b3b3b3 !important;
+            color: white !important;
+            background-color: #6a3729 !important;
+            border-color: #6a3729 !important;
+        }
+
+        .disabled>.page-link {
+            color: #c39776 !important;
         }
     }
 
+}
+
+.card-footer {
+    font-size: 14px !important;
+}
+
+.card {
+    width: 185px !important;
+    cursor: pointer;
+    color: #c39776;
+}
+
+.card:hover {
+    color: #6a3729;
+    box-shadow: 0px 0px 9px 3px #c39776;
 }

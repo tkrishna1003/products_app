@@ -1,0 +1,47 @@
+.productContainer {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid #c39776
+}
+
+.contentTitle {
+    color: #c39776;
+    text-decoration: none;
+    font-family: cursive;
+}
+
+.goBackIcon {
+    margin-top: 10px;
+    cursor: pointer;
+    color: #c39776;
+
+}
+
+.goBackIcon:hover {
+    color: #6a3729;
+}
+
+.goBackContainer .tooltip {
+    display: none;
+    color: white;
+}
+
+.goBackContainer:hover .tooltip {
+    display: block;
+}
+
+.productImg {
+    height: 30vh;
+    max-height: 600px;
+    background-size: cover !important;
+}
+
+.card-body {
+    border-radius: 10px !important;
+}
+
+.card {
+    box-shadow: 0px 0px 7px 1px #c39776;
+}

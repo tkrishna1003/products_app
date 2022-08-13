@@ -1,1 +1,45 @@
-<p>details works!</p>
+<div class = "d-flex justify-content-center h-100">
+    
+    <div class = "col-md-8 col-12 d-flex flex-column h-100">
+        <div  (click) = "goToList()" class = "goBackContainer d-flex flex-row">
+            <i-feather [tooltip] = "'Go to list'" [adaptivePosition] = "false" container = "body" [placement] = "'bottom'" name = "arrow-left" class = "goBackIcon" ></i-feather>
+            <span class = "tooltip" >Go back</span>
+        </div>
+        
+        <div class = "card productContainer d-flex justify-content-center">
+
+            <div class = " card-body productImg" [ngStyle] = "{background: 'url(../../../../assets/images/' + getBgClass() +'.jpeg' }">
+
+            </div>
+
+            <div class = "productDetails">
+                <div class = "d-flex flex-column mt-2">
+                    <a class = "contentTitle">Blend</a>
+                    {{selectedProduct?.blend_name}}
+
+                </div>
+
+                <div class = "d-flex flex-column mt-2">
+                    <a class = "contentTitle">Intensifier</a>
+                    {{selectedProduct?.intensifier}}
+                </div>
+
+                <div class = "d-flex flex-column mt-2">
+                    <a class = "contentTitle">Origin</a>
+                    {{selectedProduct?.origin}}
+                </div>
+
+                <div class = "d-flex flex-column mt-2">
+                    <a class = "contentTitle">Notes</a>
+                    {{selectedProduct?.notes}}
+                </div>
+
+
+
+
+                <div class = "d-flex flex-column mt-2"><a class="contentTitle">About this coffee</a>The two most commonly grown coffee bean types are C. arabica and C. robusta. Coffee plants are cultivated in over 70 countries, primarily in the equatorial regions of the Americas, Southeast Asia, the Indian subcontinent, and Africa. As of 2018, Brazil was the leading grower of coffee beans, producing 35% of the world total.[6] Coffee is a major export commodity as the leading legal agricultural export for numerous countries.[7] It is one of the most valuable commodities exported by developing countries. Green, unroasted coffee is the most traded agricultural commodity and one of the most traded commodities overall, second only to petroleum.[8] Despite the sales of coffee reaching billions of dollars, those actually producing the beans are disproportionately living in poverty.[9] Critics also point to the coffee industry's negative impact on the environment and the clearing of land for coffee-growing and water use. The environmental costs and wage disparity of farmers are causing the market for fair trade and organic coffee to expand.[10] Coffee farmers do not get profits from the market value as compared to the coffee processing companies</div>
+            </div>
+
+        </div>
+    </div>
+</div>
